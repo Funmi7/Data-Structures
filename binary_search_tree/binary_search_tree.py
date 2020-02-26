@@ -57,13 +57,13 @@ class BinarySearchTree:
     def for_each(self, cb):
         cb(self.value)
         if self.left == None:
-            return self.value
+            self.value
         else:
-            return self.left.for_each(cb)
+            self.left.for_each(cb)
         if self.right == None:
-            return self.value
+            self.value
         else:
-            return self.right.for_each(cb)
+            self.right.for_each(cb)
     # DAY 2 Project -----------------------
 
     # Print all the values in order from low to high
